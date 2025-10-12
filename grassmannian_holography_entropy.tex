@@ -19,6 +19,17 @@
 \usepackage[a4paper,margin=1in]{geometry}
 \usepackage[unicode]{hyperref}
 \usepackage[unicode]{hyperref} 
+\usepackage{listings}
+\lstset{
+  basicstyle=\ttfamily\small,
+  breaklines=true,
+  columns=fullflexible,
+  frame=single,
+  backgroundcolor=\color{gray!5},
+  keywordstyle=\color{blue!70!black},
+  commentstyle=\color{green!40!black},
+  showstringspaces=false
+}
 \hypersetup{
   pdftitle    = {Grassmannian, Holography, Entropy: Facets and Celestial Correspondence},
   pdfauthor   = {Daniel De La Harpe Golden; ChatGPT (OpenAI collaborative tool)},
@@ -356,7 +367,7 @@ then its celestial transform exhibits
 \qquad\text{as }\Delta_s\to1,
 \label{eq:pole-ward}
 \end{equation}
-\noindent\textbf{Interpretation as total variation.}
+\paragraph\noindent\textbf{Interpretation as total variation.}
 Throughout, we interpret \(|\Omega|\) in \eqref{eq:I2-def} as the
 \emph{total-variation measure} of the signed top form~\(\Omega\).
 That is, if \(\Omega = f\,\mathrm{d}^m x\) in local coordinates on the positive cell
@@ -365,7 +376,7 @@ This convention forgets orientation and promotes the canonical form to a positiv
 Borel measure suited for \(L^p\) functionals.
 It ensures integrability on non-compact cells once a mild regulator or projective
 gauge-fixing is applied, while preserving the unit-residue property on physical facets.
-\noindent\textbf{Why the $L^2$ functional.}
+\paragraph\noindent\textbf{Why the $L^2$ functional.}
 The choice of the quadratic ($L^2$) functional in Eq.~\eqref{eq:I2-def} is deliberate.
 Among the family
 \[
